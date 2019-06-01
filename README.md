@@ -31,6 +31,31 @@ Explorar la posibilidad de predecir el score crediticio es un tema muy interesan
 
     * **Ventaja en la conversión**: Ofrecer un precio real similar al simulado va a mejorar los ratios de conversión, pues el cliente potencial no verá diferencias sustanciales entre ambos precios.
     
-  * **Mejora en los costes de gestión interna**: Actualmente, en la mayoría de las ocasiones, el precio real ofrecido es superior al simulado con el mejor scoring crediticio, lo que provoca ratios de conversión muy bajos en este entorno.
+  * **Mejora en los costes de gestión interna**: Ofrecer un precio simulando el mejor scoring crediticio posible genera muchos leads (cliks en la web de la compañía, pero sobre todo, llamadas al call center de ventas) que atender y que, debido a los bajos ratios de conversión, no van a ser convertidos en pólizas. 
+  
+    * **Ventaja en costes**: Tener un precio real similar al simulado va a generar menos leads (pero con mayor probabilidad de conversión), por lo que se pueden optimizar los recursos dedicados a su atención.
+    
+### Descripción de los datos ###
 
-    * **Ventaja en costes**: Ofrecer un precio real similar al simulado va a mejorar los ratios de conversión, pues el cliente potencial no verá diferencias sustanciales entre ambos precios.
+_Nótese que, debido a restricciones en el uso de los datos, se han anonimizado las columnas y se han traducido la gran parte de los valores. Soy consciente que esta limitación va a dificultar la lectura y comprensión de los resultados, pero era la única forma de poderlo llevar a cabo._
+
+Para la realización del TFM se han empleado los datos que los usuarios rellenan en el entorno del comparador de precios y que son transferidos a las distintas compañías que participan en el panel de comparación con el fin de que éstas puedan ofrecer su prima.
+
+Además, estos datos han sido cruzados con una base de datos de la propia compañía que aporta información adicional sobre los objetos de riesgo (en este caso, los vehículos).
+
+### Metodología y técnicas empleadas ###
+
+* **Importación de los datos**: He optado por realizar una función con un bucle `for()` que importa las BBDD mensuales y posteriormente las une en un único fichero. Posteriormente transformo a tipo "object" las variables numéricas que no van a ser tratadas como tal y por útimo añado la información procedente de la BBDD interna de la compañía.
+
+* **Tratamiento de datos**: 
+
+    * **Missing values**: En el estudio de los missing values he optado por imputar la moda en las variables categóricas y el valor válido inmediatamente anterior en el caso de las variables continuas. En el caso del target, he decidido eliminar los registros en los que el target no estaba informado.
+
+    * **Análisis de las variables y feature engeneering**: Se realiza un análisis diferenciado de las variables categóricas y continuas.
+    
+        **Continuas**: Para el análisis de las variables continuas se han elaborado diferentes boxplot con el objetivo de observar su distribución y decidir qué hacer con sus valores extremos.
+        
+        **Categóricas**: Para el análisis de las variables categóricas se han elaborado dos funciones: `info_vars()` se crea para analizar los estadísticos básicos de cada variable y `dist_freq()` se elabora para observar la distribución de cada una de ellas.
+    
+        
+        
