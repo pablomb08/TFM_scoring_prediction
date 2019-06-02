@@ -50,12 +50,19 @@ Además, estos datos han sido cruzados con una base de datos de la propia compa�
 * **Tratamiento de datos**: 
 
     * **Missing values**: En el estudio de los missing values he optado por imputar la moda en las variables categóricas y el valor válido inmediatamente anterior en el caso de las variables continuas. En el caso del target, he decidido eliminar los registros en los que el target no estaba informado.
+    
+     * **Target**: El target es una variable que tiene 23 posibles valores, algunos de ellos con muy poca masa, lo que dificulta su predicción. Para solventar este inconveniente, se ha decidido realizar cuatro agrupaciones: Score alto, score medio, score bajo e impagos.
 
     * **Análisis de las variables y feature engeneering**: Se realiza un análisis diferenciado de las variables categóricas y continuas.
     
         **Continuas**: Para el análisis de las variables continuas se han elaborado diferentes boxplot con el objetivo de observar su distribución y decidir qué hacer con sus valores extremos.
         
-        **Categóricas**: Para el análisis de las variables categóricas se han elaborado dos funciones: `info_vars()` se crea para analizar los estadísticos básicos de cada variable y `dist_freq()` se elabora para observar la distribución de cada una de ellas.
-    
-        
-        
+        **Categóricas**: Para el análisis de las variables categóricas se han elaborado dos funciones: `info_vars()` se crea para analizar los estadísticos básicos de cada variable y `dist_freq()` para observar la distribución de cada una de ellas.
+          
+* **Preprocesado de variables categóricas**: El dataset empleado tiene una gran cantidad de variables categóricas, las cuales a su vez, tienen muchos valores únicos. Haber utilizado una técnica basada en el _one hot encoding_ habría supuesto la creación de multitud de variables adicionales, lo que hubiese dilatado considerablemente el tiempo de computación.
+
+Para resolver esta cuestión, he decidido aplicar _mean encoding_ a las variables categóricas no binarias. Esta técnica genera únicamente 4 nuevas columnas por cada variable (una por cada valor posible del target).
+
+* **Selección de variables**: Para la selección de variables he utilizado un `randomforestclassifier()`. Me he decantado por esta técnica por su precisión y también porque es muy fácil de interpretar y explicar.
+
+En clasificación, como es mi caso, se utiliza el coeficiente de Gini como medida de impureza. Aquellas variables que más contribuyen a que disminuya la impureza son las más importantes. En mi caso, he seleccionado un threshold del 0.003, lo que equivale a una selección de variables que representan el 89,3% de la impureza.
