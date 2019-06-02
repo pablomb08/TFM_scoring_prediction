@@ -61,8 +61,8 @@ Además, estos datos han sido cruzados con una base de datos de la propia compa�
           
 * **Preprocesado de variables categóricas**: El dataset empleado tiene una gran cantidad de variables categóricas, las cuales a su vez, tienen muchos valores únicos. Haber utilizado una técnica basada en el _one hot encoding_ habría supuesto la creación de multitud de variables adicionales, lo que hubiese dilatado considerablemente el tiempo de computación.
 
-Para resolver esta cuestión, he decidido aplicar _mean encoding_ a las variables categóricas no binarias. Esta técnica genera únicamente 4 nuevas columnas por cada variable (una por cada valor posible del target).
+   Para resolver esta cuestión, he decidido aplicar _mean encoding_ a las variables categóricas no binarias. Esta técnica genera      únicamente 4 nuevas columnas por cada variable (una por cada valor posible del target).
 
 * **Selección de variables**: Para la selección de variables he utilizado un `randomforestclassifier()`. Me he decantado por esta técnica por su precisión y también porque es muy fácil de interpretar y explicar.
 
-En clasificación, como es mi caso, se utiliza el coeficiente de Gini como medida de impureza. Aquellas variables que más contribuyen a que disminuya la impureza son las más importantes. En mi caso, he seleccionado un threshold del 0.003, lo que equivale a una selección de variables que representan el 89,3% de la impureza.
+   En clasificación, como es mi caso, se utiliza el coeficiente de Gini como medida de impureza. Aquellas variables que más contribuyen  a que disminuya la impureza son las más importantes. En mi caso, he seleccionado un threshold del 0.003, lo que equivale a una selección de variables que representan el 89,3% de la impureza.
