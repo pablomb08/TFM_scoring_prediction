@@ -15,7 +15,7 @@ El scoring crediticio es un factor de riesgo utilizado por la compañía de segu
 
 Actualmente, cuando se realiza una cotización del seguro de automóvil **en un entorno diferente al del comparador de precios**, se llama a la aplicación del proveedor, quien proporciona el dato del scoring crediticio a la compañía de seguros para que pueda completar la cotización y ofrecer la prima al cliente.
 
-**En el entorno del comparador de precios** el proceso es distinto: Debido al gran volumen de solicitudes de precio que llegan a través de estas plataformas y a su bajo ratio de conversión, para optimizar el coste de las consultas, la compañía decide ofrecer la prima simulando que el cliente tiene el mejor score crediticio posible.
+**En el entorno del comparador de precios** el proceso es distinto: Debido al gran volumen de solicitudes de precio que llegan a través de estas plataformas y a su bajo ratio de conversión, para optimizar el coste de las consultas la compañía decide ofrecer la prima simulando que el cliente tiene el mejor score crediticio posible.
 
 Si el cliente muestra interés por este primer precio simulado, se le transfiere al entorno de la compañía (web o call center), donde se realiza la consulta del scoring crediticio y se le ofrece su precio cierto.
 
