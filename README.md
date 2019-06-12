@@ -67,3 +67,21 @@ Además, estos datos han sido cruzados con una base de datos de la propia compa�
 
    En clasificación, como es mi caso, se utiliza el coeficiente de Gini como medida de impureza. Aquellas variables que más contribuyen  a que disminuya la impureza son las más importantes. En mi caso, he seleccionado un threshold del 0.003, lo que equivale a una selección de variables recogen el 89,3% de la impureza de los datos.
    
+* **Modelización**: Para evaluar los modelos realizados se parte de un modelo Naive, que mide el acierto si se elige siempre la clase mayoritaria (en este caso ronda el 41%). La métrica de evaluación escogida es el **accuracy**, ya que lo que se prima es el acierto en la elección entre las distintos valores posibles que puede tomar el target.
+
+  Se han realizado los siguientes modelos: Regresión logística multiclase, random forest, SVM y XGBoost. Con el objetivo de no demorar demasiado el tiempo de ejecución, para la selección de los hiperparámetros se ha optado por emplear la función `RandomizedSearhCV()`, que realiza una búsqueda aleatoria de hiperparámetros dentro de las alternativas que se le indican.
+   
+  El resultado de los modelos aplicados es el siguiente:
+  
+     Modelo  |  Accuracy
+  ---------- | -----------
+  Naive      |  41,32%
+  R. Log     |  51,79%
+  R. Forest  |  52,09%
+  SVM        |  51,62%
+  XGBoost    |  54,58%
+   
+   
+   
+   
+   
