@@ -81,7 +81,15 @@ Además, estos datos han sido cruzados con una base de datos de la propia compa�
   SVM        |  51,62%
   XGBoost    |  54,58%
    
+  Una vez observado el accuracy de los distintos modelos, **se elige el XGBoost**. 
    
-   
-   
+  La validación del modelo en test da como resultado un accuracy del 55,41%, algo superior al accuracy de entrenamiento.
+  
+  Para certificar que el modelo es correcto y que el accuracy del test se mueve en valores razonables, se simulan 10.000 conjuntos aleatorios de test y se define un intervalo de confianza del accuracy con los valores correspondientes al percentil 2,5 y 97,5.
+  
+  Este intervalo queda definido por los valores situados entre el 54,74% y el 56,06%, con lo que el resultado de la predicción en test está dentro del mismo.
+  
+  Por último, se muestra la matriz de confusión del XGBoost:
+  
+
    
