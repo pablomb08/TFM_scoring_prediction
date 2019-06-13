@@ -37,11 +37,11 @@ Explorar la posibilidad de predecir el score crediticio es un tema muy interesan
     
 ### Descripción de los datos ###
 
-_Nótese que, debido a restricciones en el uso de los datos, se han anonimizado las columnas y se han traducido la gran parte de los valores. Soy consciente que esta limitación va a dificultar la lectura y comprensión de los resultados, pero era la única forma de poderlo llevar a cabo._
+_Nótese que, debido a restricciones en el uso de los datos, se han anonimizado las columnas y se han traducido la gran parte de los valores. Además, se trabaja con un fichero de datos parcial que contiene ruido. De esta forma se garantiza el cumplimiento de la normativa interna de la escuela al mismo tiempo que se cumple con la legislación vigente y se protege el conocimiento interno de la compañía._
 
-Para la realización del TFM se han empleado los datos que los usuarios rellenan en el entorno del comparador de precios y que son transferidos a las distintas compañías que participan en el panel de comparación con el fin de que éstas puedan ofrecer su prima.
+Para la realización del TFM se han empleado datos de muestra que los usuarios rellenan en el entorno del comparador de precios y que son transferidos a las distintas compañías que participan en el panel de comparación con el fin de que éstas puedan ofrecer su prima.
 
-Además, estos datos han sido cruzados con una base de datos de la propia compañía que aporta información adicional sobre los objetos de riesgo (en este caso, los vehículos).
+Además, se simula el cruce de estos datos con una base de datos de la propia compañía que aporta información adicional sobre los objetos de riesgo (en este caso, los vehículos).
 
 ### Metodología y técnicas empleadas ###
 
