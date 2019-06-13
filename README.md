@@ -91,5 +91,5 @@ Además, estos datos han sido cruzados con una base de datos de la propia compa�
   
   Por último, se muestra la matriz de confusión del XGBoost:
   
-  ![alt text](https://github.com/pablomb08/TFM_scoring_prediction/notebooks/confussion_matrix_xgboost.png)
+  ![alt text](https://github.com/pablomb08/TFM_scoring_prediction/blob/master/notebooks/confussion_matrix_xgboost.PNG)
    
