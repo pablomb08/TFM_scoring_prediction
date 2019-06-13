@@ -89,7 +89,14 @@ Además, estos datos han sido cruzados con una base de datos de la propia compa�
   
   Este intervalo queda definido por los valores situados entre el 54,74% y el 56,06%, con lo que el resultado de la predicción en test está dentro del mismo.
   
-  Por último, se muestra la matriz de confusión del XGBoost:
+ ### Resultado ###
+  
+ Por último, se muestra la matriz de confusión del XGBoost:
   
   ![alt text](https://github.com/pablomb08/TFM_scoring_prediction/blob/master/notebooks/confussion_matrix_xgboost.PNG)
+  
+Analizando la matriz, se observa que el modelo predice correctamente las clases 1 y 2 del target, no obstante, tiene más dificultades para clasificar las clases 3 y 4.
    
+### Conclusión ###
+
+Se puede concluir que, con los datos disponibles en la tarificación de un seguro, un modelo no es capaz de predecir con gran acierto entre las 4 posibles clases de score. Sin embargo, a través de un modelo predictivo sí se puede identificar con una precisión aceptable si el score pertenece a las clases 1 o 2, lo que permitiría elaborar reglas de negocio que permitan atraer o rechazar a esta tipología de cliente.
