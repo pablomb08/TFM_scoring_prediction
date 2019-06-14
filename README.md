@@ -93,7 +93,7 @@ Además, se simula el cruce de estos datos con una base de datos de la propia co
   
  Por último, se muestra la matriz de confusión del XGBoost:
   
-  ![alt text](https://github.com/pablomb08/TFM_scoring_prediction/blob/master/img/confussion_matrix_xgboost.PNG)
+  ![alt text](https://github.com/pablomb08/TFM_scoring_prediction/blob/master/img/confussion_matrix_xgboost.PNG) 
   
 Analizando la matriz, se observa que el modelo predice correctamente las clases 1 y 2 del target, no obstante, tiene más dificultades para clasificar las clases 3 y 4.
    
