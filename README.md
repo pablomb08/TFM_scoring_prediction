@@ -9,7 +9,7 @@
 
 El objetivo principal de este TFM es determinar si se puede precedir el scoring crediticio a partir de los datos que el usuario rellena para realizar una cotización del seguro del automóvil en un  entorno de comparación de precios (Rastreator, acierto.com, ...).
 
-Para su elaboración, se ha empleado un fichero con información parcial de cotizaciones al que se le ha añadido ruido. Además, se han anonimizado las columnas y se han traducido los valores. De esta forma se garantiza el cumplimiento de la normativa interna al mismo tiempo que se cumple con la legislación vigente y se protege el conocimiento interno de la compañía.
+Para su elaboración, se ha empleado un fichero de cotizaciones con información parcial al que se le ha añadido ruido. Además, se han anonimizado las columnas y se han traducido los valores. De esta forma se garantiza el cumplimiento de la normativa interna al mismo tiempo que se cumple con la legislación vigente y se protege el conocimiento interno de la compañía.
 
 #### Antecedentes ####
 
