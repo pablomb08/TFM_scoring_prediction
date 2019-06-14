@@ -1,8 +1,6 @@
-# TFM: Predicción del scoring crediticio en el entorno de comparación de precios
+## Instrucciones para la ejecución del proyecto ##
 
-## Máster en Data Science, ed.12 ##
 
-## Autor: Pablo Morcuende Botello ##
 
 
 
